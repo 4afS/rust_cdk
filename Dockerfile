@@ -1,7 +1,5 @@
 FROM rust:1.59 AS builder
 
-
-
 RUN USER=root cargo new --bin rust_cdk
 WORKDIR /rust_cdk
 
