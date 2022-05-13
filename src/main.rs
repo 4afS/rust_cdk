@@ -11,7 +11,7 @@ async fn main() -> std::io::Result<()> {
             .route("/hc", web::get().to(get_health_status))
             .default_service(web::route().to(HttpResponse::NotFound))
     })
-    .bind(("127.0.0.1", 8080))?
+    .bind(("0.0.0.0", 8080))?
     .run()
     .await
 }
