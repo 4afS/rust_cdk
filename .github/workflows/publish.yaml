@@ -38,5 +38,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: latest
+          tags: 4afs/rust_cdk:master:latest
           labels: ${{ steps.meta.outputs.labels }}
