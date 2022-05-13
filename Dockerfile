@@ -19,4 +19,5 @@ RUN cargo build --release
 FROM debian:buster-slim
 
 COPY --from=builder /rust_cdk/target/release/rust_cdk .
+EXPOSE 8080
 CMD ["./rust_cdk"]
